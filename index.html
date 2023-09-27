@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(() => {
+        $("#services-carousel-arrow-forward").click(() => {
+          let $target = $("#services-carousel")
+          $("#services-carousel").animate(
+            { scrollLeft: $target.scrollLeft() + $target.width() * 0.9 * 0.9 }
+          , 300);
+        })
+
+        $("#services-carousel-arrow-back").click(() => {
+          let $target = $("#services-carousel")
+          $("#services-carousel").animate(
+            { scrollLeft: $target.scrollLeft() - $target.width() * 0.9 * 0.9 }
+          , 300);
+        })
+      })
+    </script>
+  </head>
+
+  <body class="sans-serif near-black">
+    <header class="banner bg-white fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l z-5 bb bw1 b--light-gray">
+      <div class="w-60 center flex items-center justify-between f6 fw6">
+        <img width="300" src="/assets/PlumbStuff-Logo-V4.png" alt="Plumb Stuff Logo" />
+        <div class="flex flex-column items-center">
+          <a class="saira db pointer f4 fw6 link dim br3 ph4 pv3 white bg-tomato mb2 tc" href="tel:035482924">
+            03 548 2924
+          </a>
+          <a class="saira db tomato link dim" href="mailto:info@plumbstuffnz.co.nz">info@plumbstuffnz.co.nz</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="center w-80 h-100">
+        <div class="w-70 relative flex flex-column mv4 pv4 pl5 pr5"
+             style="top:30%;">
+          <h2 class="f1 saira white">Quality plumbing services in Nelson and Tasman</h2>
+          <div class="flex justify-start">
+            <div class="saira pointer f4 fw6 link ph4 pv3 mb2 dib br3 white bg-tomato">
+              Contact us now
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="center mv4 w-70">
+      <div id="services">
+        <div class="mv4 flex justify-center">
+          <h2 class="f2 saira eerie-black">What we do</h2>
+        </div>
+        <div class="flex flex-column">
+          <div id="services-carousel" class="w-100 flex overflow-x-scroll">
+            <div class="sc-item active w-90" style="flex:1 0 auto;">
+              <div class="bg-light-gray flex br1 mr3">
+                <img style="max-height:450px;object-fit:cover;" src="./assets/bathroom-1.jpg" alt="Bathroom Maintenance" />
+                <div class="ph4">
+                  <h3 class="f2 saira mb1 eerie-black">Maintenance</h3>
+                  <p class="poppins lh-copy measure">
+                     Providing comprehensive plumbing maintenance solutions for your home and business. From leak repairs to fixture replacements, we ensure integrity and durability.
+                  </p>
+                  <ul class="poppins list pl0 ph2">
+                    <li class="bb b--gray pv2 mr4 f6">Leaking pipes, valves, taps, showers, toilet cistern header tanks, hot water cylinders</li>
+                    <li class="bb b--gray pv2 mr4 f6">Burst water mains, in-wall pipes, under-house repairs, ceiling space repairs</li>
+                    <li class="bb b--gray pv2 mr4 f6">Fixture replacement</li>
+                    <li class="bb b--gray pv2 mr4 f6">Boiling vessel repairs (Zip, Rheem, etc.)</li>
+                    <li class="bb b--gray pv2 mr4 f6">Replacement of old piping systems (e.g. Dux Quest)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="sc-item w-90" style="flex:1 0 auto;">
+              <div class="bg-light-gray flex br1 mr3">
+                <img style="max-height:450px;object-fit:cover;" src="./assets/bathroom-1.jpg" alt="Bathroom Maintenance" />
+                <div class="ph4">
+                  <h3 class="f2 saira mb1 eerie-black">Renovations and New Builds</h3>
+                  <p class="poppins lh-copy measure">
+                     High quality renovations of kitchens, bathrooms, laundries, and hot water systems and new builds as directed by you.
+                  </p>
+                  <ul class="poppins list pl0 ph2">
+                    <li class="bb b--gray pv2 mr4 f6">Renovations of all sizes to suit your needs and budget.</li>
+                    <li class="bb b--gray pv2 mr4 f6">Fixture replacement</li>
+                    <li class="bb b--gray pv2 mr4 f6">Conversion from low pressure hot water to mains pressure systems</li>
+                    <li class="bb b--gray pv2 mr4 f6">Ring main installations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="sc-item w-90" style="flex:1 0 auto;">
+              <div class="bg-light-gray flex br1 mr3">
+                <img style="max-height:450px;object-fit:cover;" src="./assets/bathroom-1.jpg" alt="Bathroom Maintenance" />
+                <div class="ph4">
+                  <h3 class="f2 saira mb1 eerie-black">Alterations</h3>
+                  <p class="poppins lh-copy measure">
+                     Expertise in plumbing alterations to enhance and modernize your property, from pump fittings to boiler installations.
+                  </p>
+                  <ul class="poppins list pl0 ph2">
+                    <li class="bb b--gray pv2 mr4 f6">Fitting of house pumps, booster pumps and circulating pumps</li>
+                    <li class="bb b--gray pv2 mr4 f6">Installation of whole house and point of use filter systems</li>
+                    <li class="bb b--gray pv2 mr4 f6">Installation of under bench hot water systems</li>
+                    <li class="bb b--gray pv2 mr4 f6">Boiler unit installation</li>
+                    <li class="bb b--gray pv2 mr4 f6">Exterior hot water cyclinder installation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="services-carousel-controls flex self-end"
+            style="margin-top:-30px;margin-right:30px;"
+          >
+            <div id="services-carousel-arrow-back" class="pointer self-end w3 h3 br-100 bg-tomato white flex items-center justify-center mr3">
+              <span class="material-symbols-outlined" style="font-size:32px">arrow_back</span>
+            </div>
+            <div id="services-carousel-arrow-forward" class="pointer self-end w3 h3 br-100 bg-tomato white flex items-center justify-center">
+              <span class="material-symbols-outlined" style="font-size:32px">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="mb5">
+        <div class="mv4 flex justify-center">
+          <h2 class="f2 saira eerie-black">About us</h2>
+        </div>
+
+        <div class="flex items-center">
+          <div class="w-50">
+            <img class="about-image" src="/assets/Ron-Snapper.jpg">
+          </div>
+
+          <div class="w-50 pa4 bg-picton-blue white">
+            <h3 class="f2 saira mv1">Ron Addidle</h3>
+            <p class="f4 saira lh-copy">
+              Born in Northern Ireland, Ron's strong work ethic has been a foundation throughout his life. With 24 years in the military, he's developed a keen eye for detail, punctuality, and excellent organizational skills. This discipline and dedication directly benefit the quality and reliability of his plumbing work.
+            </p>
+            <p class="f5 poppins lh-copy">
+              With over 15 years in the plumbing industry, Ron has handled everything from minor leaks to spearheading projects at notable venues like DB Breweries and Alliance Meats. He's been involved in school renovations and retirement village constructions. Having worked across regions from Christchurch to South Canterbury, he's now settled in Nelson for the past five years. Although knowledgeable in drainlaying and gas work, he's not currently licensed to perform these specific tasks.
+            </p>
+
+            <p class="f5 poppins lh-copy">
+              In his free time, Ron loves exploring the Nelson and Tasman areas. An avid hunter and fisher, he enjoys the outdoors and connecting with the natural beauty of his surroundings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-70 center bg-tomato br3 white mv5 pv4 ph5 flex flex-column items-center">
+        <h4 class="f4 poppins mv1">Got a project you'd like to tackle?</h4>
+        <h3 class="f2 saira mv3">Call Ron on 03 548 2924</h3>
+        <h5 class="f6 poppins mv1">We're happy to chat and provide a no-obligation quote.</h5>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer white pv4" style="background:#0496c7">
+      <div class="w-70 center flex justify-between mb5">
+        <div>
+        </div>
+        <div class="w-50 flex flex-column items-end">
+          <h3 class="f3 saira mv3">Get in touch</h3>
+          <div>
+            <p class="f4 saira mv2">Ron Addidle</p>
+            <div class="w-100 flex justify-between">
+              <p class="db f5 poppins mv0"><span class="f6">Mobile:</span></p>
+              <span class="db saira fw6">027 376 9994</span>
+            </div>
+            <div class="w-100 flex justify-between">
+              <p class="db f5 poppins mv0"><span class="f6">Tel:</span></p>
+              <span class="db saira fw6">03 548 2924</span>
+            </div>
+            <div class="w-100 flex justify-between">
+              <p class="db f5 poppins mv0"><span class="f6">Email:</span></p>
+              <a href="mailtp:info@plumbstuffnz.co.nz" class="link white underline db saira fw6">info@plumbstuffnz.co.nz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-70 center flex justify-center mt3">
+        <p class="f6 poppins mv0">Plumb Stuff NZ Limited © 2023.</p>
+    </footer>
+  </body>
+</html>
