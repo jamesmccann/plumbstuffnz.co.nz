@@ -29,7 +29,7 @@ body, html {
 
 .hero {
 	width: 100vw;
-	height: 70vh;
+	height: 85vh;
 	position: relative;
 }
 
@@ -41,7 +41,7 @@ body, html {
 	height: 100%;
 	background-color: #00a3da;
   background-image: linear-gradient(
-    to left, transparent, rgb(0, 163, 218, 0.5), #00a3da
+    to left, transparent, rgb(0, 163, 218, 0.1), rgb(0, 163, 218, 0.7)
   ), url("/assets/nelson-aerial.jpg");
   background-repeat: no-repeat;
 	background-size: cover;
