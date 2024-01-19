@@ -3,35 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Plumber in Nelson/Tasman" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://plumbstuffnz.co.nz" />
     <meta property="og:image" content="/assets/og-image.png" />
-		<meta name="description"
-
-    <title>Plumb Stuff - Quality Plumbing in Nelson/Tasman</title>
-
+    <meta property="og:title" content="Plumber in Nelson/Tasman" />
+    <meta property="og:description" content="Experienced sole-trader plumber serving Nelson and Tasman. Ron is here to help for any plumbing maintenance, plumbing alterations, residential renovations or new build plumbing installations, and commercial plumbing services." />
+		<meta name="description" content="Experienced sole-trader plumber serving Nelson and Tasman. Ron is here to help for any plumbing maintenance, plumbing alterations, residential renovations or new build plumbing installations, and commercial plumbing services." />
+		<meta name="google-site-verification" content="2OTLq9Wp-enxOYsoTqJcBvPFbAAcRqeTy0YYcaSocr8" />
+    <title>Plumb Stuff - Ron Addidle | Experienced Plumber servicing Nelson and Tasman</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(() => {
-        $("#services-carousel-arrow-forward").click(() => {
-          let $target = $("#services-carousel")
-          $("#services-carousel").animate(
-            { scrollLeft: $target.scrollLeft() + $target.width() * 0.9 * 0.9 }
-          , 300);
-        })
-
-        $("#services-carousel-arrow-back").click(() => {
-          let $target = $("#services-carousel")
-          $("#services-carousel").animate(
-            { scrollLeft: $target.scrollLeft() - $target.width() * 0.9 * 0.9 }
-          , 300);
-        })
-      })
-    </script>
   </head>
 
   <body class="sans-serif near-black">
@@ -39,7 +22,7 @@
       <div class="w-80 center flex items-center justify-between f6 fw6">
 				<img style="max-width:300px;" class="w-50 w-100-l" src="/assets/PlumbStuff-Logo-V4.png" alt="Plumb Stuff Logo" />
         <div class="flex flex-column items-center">
-          <a class="saira db pointer f4 fw6 link dim br3 ph4-l pv3-l pa2 white bg-tomato mb2 tc" href="tel:0273769994">
+          <a class="saira db pointer f4 fw6 link dim br-pill ph4-l pv3-l pa2 white bg-tomato mb2 tc" href="tel:0273769994">
             027 376 9994
           </a>
           <a class="saira db tomato link dim" href="mailto:info@plumbstuffnz.co.nz">info@plumbstuffnz.co.nz</a>
@@ -49,121 +32,101 @@
 
     <div class="hero mt5">
       <div class="hero-bg"></div>
-      <div class="center w-80 h-100 flex flex-column justify-center">
-        <div class="w-100 w-70-l relative flex flex-column mv4 pv5 pr4 pl5-l">
-          <h2 class="f1 ns saira white">Quality plumbing services in Nelson and Tasman</h2>
-          <div class="flex justify-start">
-            <a class="link white pointer mr3" href="tel:0273769994">
-              <div class="saira f4 fw6 link ph3 pv2 pv3-ns mb2 dib br3 white bg-tomato flex items-center">
-                <span class="material-symbols-outlined mr2" style="font-size:32px">phone</span> 027 376 9994
-              </div>
-            </a>
+      <div class="center w-80 h-100 flex flex-column items-end justify-center">
+        <div class="w-100 w-60-l relative bg-white">
+          <div class="w-100 bg-picton-blue" style="height:6px"></div>
+          <div class="w-100 flex flex-column pa4">
+            <h2 class="measure-wide f2 saira eerie-black lh-title mt0 mb1">Quality plumbing services in Nelson and Tasman</h2>
+            <h3 class="measure-wide f4 poppins lh-title mv2" style="color:#6b6b6b">Experienced local help for your plumbing maintenance, alternations, renovations and commercial projects.</h3>
+          </div>
+          <div class="flex items-center justify-end pa3 bg-eerie-black">
+            <h3 class="f4 fw4 poppins white mr4">Need a quote?</h3>
+            <a class="saira db pointer f4 fw6 link dim br-pill ph4-l pv3-l pa2 white bg-tomato mr2 tc" style="letter-spacing:1px;font-size:1.15rem;" href="tel:0273769994">Call 027 376 9994</a>
+            <a class="saira db pointer f4 fw6 link dim br-pill ph4-l pv3-l pa2 white bg-tomato mr2 tc" style="letter-spacing:1px;font-size:1.15rem;" href="mailto:info@plumbstuffnz.co.nz">Email Ron</a>
           </div>
         </div>
       </div>
     </div>
 
-    <main class="center mv4 w-100 w-70-l ph2">
-      <div id="services">
+    <main class="w-100">
+      <div id="services" class="center mv4 w-100 ph2 ph4-l" style="max-width:1200px">
         <div class="mv4 flex justify-center">
           <h2 class="f2 saira eerie-black">What we do</h2>
         </div>
-        <div class="flex flex-column">
-          <div id="services-carousel" class="w-100 flex overflow-x-scroll">
-            <div class="sc-item active" style="flex:1 0 auto;">
-              <div class="bg-light-gray flex flex-column flex-row-l br1 mr3 pb4 pb0-ns">
-                <img style="width:330px;height:450px;object-fit:cover;" src="/assets/maintenance-1.jpg" alt="Image of pipes after repair" />
-                <div class="measure-narrow measure-ns ph4">
-                  <h3 class="f2 saira mb1 eerie-black">Maintenance</h3>
-                  <p class="poppins lh-copy">
-                     Providing comprehensive plumbing maintenance solutions for your home and business. From leak repairs to fixture replacements, we ensure integrity and durability.
-                  </p>
-                  <ul class="poppins list pl0 ph2">
-                    <li class="bb b--gray pv2 mr4 f6">Leaking pipes, valves, taps, showers, toilet cistern header tanks, hot water cylinders</li>
-                    <li class="bb b--gray pv2 mr4 f6">Burst water mains, in-wall pipes, under-house repairs, ceiling space repairs</li>
-                    <li class="bb b--gray pv2 mr4 f6">Fixture replacement</li>
-                    <li class="bb b--gray pv2 mr4 f6">Boiling vessel repairs (Zip, Rheem, etc.)</li>
-                    <li class="bb b--gray pv2 mr4 f6">Replacement of old piping systems (e.g. Dux Quest)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
-            <div class="sc-item" style="flex:1 0 auto;">
-              <div class="bg-light-gray flex flex-column flex-row-l br1 mr3 pb4 pb0-ns">
-                <img style="width:330px;height:450px;object-fit:cover;" src="/assets/bathroom-1.jpg" alt="Image of a new bathroom renovation" />
-                <div class="measure-narrow measure-ns ph4">
-                  <h3 class="f2 saira mb1 eerie-black">Renovations and New Builds</h3>
-                  <p class="poppins lh-copy">
-                     High quality renovations of kitchens, bathrooms, laundries, and hot water systems and new builds as directed by you.
-                  </p>
-                  <ul class="poppins list pl0 ph2">
-                    <li class="bb b--gray pv2 mr4 f6">Renovations of all sizes to suit your needs and budget.</li>
-                    <li class="bb b--gray pv2 mr4 f6">Fixture replacement</li>
-                    <li class="bb b--gray pv2 mr4 f6">Conversion from low pressure hot water to mains pressure systems</li>
-                    <li class="bb b--gray pv2 mr4 f6">Ring main installations</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="sc-item" style="flex:1 0 auto;">
-              <div class="bg-light-gray flex flex-column flex-row-l br1 mr3 pb4 pb0-ns">
-                <img style="width:330px;height:450px;object-fit:cover;" src="/assets/kitchen-1.jpg" alt="Image of a newly built kitchen" />
-                <div class="measure-narrow measure-ns ph4">
-                  <h3 class="f2 saira mb1 eerie-black">Alterations</h3>
-                  <p class="poppins lh-copy">
-                     Expertise in plumbing alterations to enhance and modernize your property, from pump fittings to boiler installations.
-                  </p>
-                  <ul class="poppins list pl0 ph2">
-                    <li class="bb b--gray pv2 mr4 f6">Fitting of house pumps, booster pumps and circulating pumps</li>
-                    <li class="bb b--gray pv2 mr4 f6">Installation of whole house and point of use filter systems</li>
-                    <li class="bb b--gray pv2 mr4 f6">Installation of under bench hot water systems</li>
-                    <li class="bb b--gray pv2 mr4 f6">Boiler unit installation</li>
-                    <li class="bb b--gray pv2 mr4 f6">Exterior hot water cyclinder installation</li>
-                  </ul>
-                </div>
-              </div>
+        <div class="w-100 flex flex-column flex-row-l" style="gap:12px;">
+          <div class="card flex flex-column" style="flex:1;background:#f5f5f5">
+            <img src="/assets/timaru-vanity-1.jpeg" alt="Image of a completed bathroom renovation in Timaru" />
+            <div class="w-100 bg-picton-blue" style="height:6px"></div>
+            <div class="w-100 pa2">
+              <h4 class="f4 saira fw6 eerie-black mv1">Renovations and New Builds</h4>
+              <p class="saira f5 fw4 eerie-black lh-copy">
+                High quality renovations of kitchens, bathrooms, laundries, and hot water systems and new builds as directed by you.
+                <br/><br/>From transportable homes to new factory builds, Ron has the knowledge and experience to advise and guide you through your project.
+              </p>
             </div>
           </div>
-          <div class="dn db-ns self-end">
-            <div
-              class="services-carousel-controls flex"
-              style="margin-top:-30px;margin-right:30px;"
-            >
-              <div id="services-carousel-arrow-back" class="pointer self-end w3 h3 br-100 bg-tomato white flex items-center justify-center mr3">
-                <span class="material-symbols-outlined" style="font-size:32px">arrow_back</span>
-              </div>
-              <div id="services-carousel-arrow-forward" class="pointer self-end w3 h3 br-100 bg-tomato white flex items-center justify-center">
-                <span class="material-symbols-outlined" style="font-size:32px">arrow_forward</span>
-              </div>
+
+          <div class="card flex flex-column" style="flex:1;background:#f5f5f5">
+            <img src="/assets/timaru-vanity-1.jpeg" alt="Image of a completed bathroom renovation in Timaru" />
+            <div class="w-100 bg-picton-blue" style="height:6px"></div>
+            <div class="w-100 pa2">
+              <h4 class="f4 saira fw6 eerie-black mv1">Plumbing Maintenance</h4>
+              <p class="saira f5 fw4 eerie-black lh-copy">
+                We can repair or replace as necessary anything you are having issues with, such as: taps, valves, pipes, showers, toilets, laundry tubs, header tanks, hot water cylinders and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="card flex flex-column" style="flex:1;background:#f5f5f5">
+            <img src="/assets/timaru-vanity-1.jpeg" alt="Image of a completed bathroom renovation in Timaru" />
+            <div class="w-100 bg-picton-blue" style="height:6px"></div>
+            <div class="w-100 pa2">
+              <h4 class="f4 saira fw6 eerie-black mv1">Plumbing Alterations</h4>
+              <p class="saira f5 fw4 eerie-black lh-copy">
+                Expertise in plumbing alterations to enhance and modernize your property, from pump fittings to boiler installations.
+              </p>
+            </div>
+          </div>
+
+          <div class="card flex flex-column" style="flex:1;background:#f5f5f5">
+            <img src="/assets/timaru-vanity-1.jpeg" alt="Image of a completed bathroom renovation in Timaru" />
+            <div class="w-100 bg-picton-blue" style="height:6px"></div>
+            <div class="w-100 pa2">
+              <h4 class="f4 saira fw6 eerie-black mv1">Commercial and Industrial Plumbing</h4>
+              <p class="saira f5 fw4 eerie-black lh-copy">
+                Ron has extensive experience working in the commercial and industrial plumbing sector for leading companies around New Zealand.
+                <br/><br/>Experience with many different types of products in the industrial space including UPVC, Stainless, Galvanised Steel, Fusiotherm, PE Welding, Copper, Schedule 80 and more.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="about" class="mb5">
-        <div class="mv4 flex justify-center">
-          <h2 class="f2 saira eerie-black">About us</h2>
-        </div>
-
-        <div class="flex flex-column flex-row-ns items-center">
-          <div class="w-100 w-50-ns">
-            <img class="about-image" src="/assets/Ron-Snapper.jpg">
+      <div class="bg-light mv5">
+        <div id="about" class="center w-100 ph2 ph5-l pv4" style="max-width:1200px">
+          <div class="flex justify-center mb4">
+            <h2 class="f2 saira eerie-black">Who we are</h2>
           </div>
 
-          <div class="w-100 w-50-ns pa4 bg-picton-blue white">
-            <h3 class="f2 saira mv1">Ron Addidle</h3>
-            <p class="f4 saira lh-copy">
-              Born in Northern Ireland, Ron's strong work ethic has been a foundation throughout his life. With 24 years in the military, he's developed a keen eye for detail, punctuality, and excellent organizational skills. This discipline and dedication directly benefit the quality and reliability of his plumbing work.
-            </p>
-            <p class="f5 poppins lh-copy">
-              With over 15 years in the plumbing industry, Ron has handled everything from minor leaks to spearheading projects at notable venues like DB Breweries and Alliance Meats. He's been involved in school renovations and retirement village constructions. Having worked across regions from Christchurch to South Canterbury, he's now settled in Nelson for the past five years. Although knowledgeable in drainlaying and gas work, he's not currently licensed to perform these specific tasks.
-            </p>
+          <div class="flex flex-column flex-row-ns items-top" style="gap:24px;">
+            <div class="w-100 w-50-ns">
+              <img class="about-image" src="/assets/about-ron.jpg">
+            </div>
 
-            <p class="f5 poppins lh-copy">
-              In his free time, Ron loves exploring the Nelson and Tasman areas. An avid hunter and fisher, he enjoys the outdoors and connecting with the natural beauty of his surroundings.
-            </p>
+            <div class="w-100 w-50-ns pa4 pv0 eerie-black">
+              <h3 class="f2 saira mv1">Ron Addidle</h3>
+              <p class="f4 saira lh-copy">
+                Born in Northern Ireland, Ron's strong work ethic has been a foundation throughout his life. With 24 years in the military, he's developed a keen eye for detail, punctuality, and excellent organizational skills. This discipline and dedication directly benefit the quality and reliability of his plumbing work.
+              </p>
+              <p class="f5 poppins lh-copy">
+                With over 15 years in the plumbing industry, Ron has handled everything from minor leaks to spearheading projects at notable venues like DB Breweries and Alliance Meats. He's been involved in school renovations and retirement village constructions. Having worked across regions from Christchurch to South Canterbury, he's now settled in Nelson for the past five years. Although knowledgeable in drainlaying and gas work, he's not currently licensed to perform these specific tasks.
+              </p>
+
+              <p class="f5 poppins lh-copy">
+                In his free time, Ron loves exploring the Nelson and Tasman areas. An avid hunter and fisher, he enjoys the outdoors and connecting with the natural beauty of our surroundings.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -175,12 +138,10 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer white pv4" style="background:#0496c7">
+    <footer id="footer" class="footer white pv4" style="background:#333333">
       <div class="w-100 w-70-ns center flex justify-between mb5">
-        <div>
-        </div>
-        <div class="w-100 w-50-ns flex flex-column items-end ph4">
-          <h3 class="f3 saira mv3">Get in touch</h3>
+        <div class="w-100 w-50-ns flex flex-column items-start ph4">
+          <h3 class="f3 saira mv3">Plumb Stuff</h3>
           <div>
             <p class="f4 saira mv2">Ron Addidle</p>
             <div class="w-100 flex justify-between">
@@ -201,7 +162,7 @@
         </div>
       </div>
       <div class="w-70 center flex items-center justify-center mt3">
-        <p class="f6 poppins mv0">Plumb Stuff NZ Limited © 2023.</p>
+        <p class="f6 poppins mv0">Plumb Stuff NZ Limited © 2024.</p>
         <div class="mh3">
           <a href="/assets/plumbstuff-terms-and-conditions.pdf" target="_blank" download class="link white underline db saira fw6">Terms of Trade</a>
         </div>
