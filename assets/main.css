@@ -57,10 +57,13 @@ body, html {
 	width: 100vw;
 }
 
-.services-carousel {
-	-ms-overflow-style: none;  /* Internet Explorer 10+ */
-	scrollbar-width: none;  /* Firefox */
+.services-img {
+	max-height: 250px;
+	object-fit: cover;
 }
-.services-carousel::-webkit-scrollbar {
-	display: none;  /* Safari and Chrome */
+
+@media screen and (min-width: 60em) {
+	.services-img {
+		max-height: 170px;
+	}
 }
