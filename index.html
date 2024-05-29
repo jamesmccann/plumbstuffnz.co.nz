@@ -14,7 +14,22 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+		<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			window.onscroll = function() {
+				console.log('here', window.pageYOffset);
+				var banner = document.getElementById('leave-banner');
+				if (window.pageYOffset > 500) { 
+						banner.style.opacity = '0'; 
+						banner.style.transform = 'translateY(100%)';
+				} else {
+						banner.style.opacity = '1'; 
+						banner.style.transform = 'translateY(0%)';
+				}
+			};
+		</script>
   </head>
 
   <body class="sans-serif near-black">
@@ -49,7 +64,7 @@
     </div>
 
     <main class="w-100">
-      <div id="services" class="center mv4 w-100 ph2 ph4-l" style="max-width:1200px">
+      <div id="services" class="flex flex-column center mv4 w-100 ph2 ph4-l" style="max-width:1200px">
         <div class="mv4 flex justify-center">
           <h2 class="f2 saira eerie-black">What we do</h2>
         </div>
@@ -115,6 +130,13 @@
             </div>
           </div>
         </div>
+
+				<div class="w-100 flex flex-column justify-center items-center mt5 mb4">
+					<h4 class="f4 saira fw6 gray mb4">Proud to be part of</h4>
+					<a href="https://www.masterplumbers.org.nz/homeowner-info/master-plumbers-guarantee/">
+						<img width="200" src="/assets/masterplumbers.jpeg" alt="Master Plumbers New Zealand Logo" />
+					</a>
+				</div>
       </div>
 
       <div class="bg-light mv5">
@@ -134,7 +156,7 @@
                 Born in Northern Ireland, Ron's strong work ethic has been a foundation throughout his life. With 24 years in the military, he's developed a keen eye for detail, punctuality, and excellent organizational skills. This discipline and dedication directly benefit the quality and reliability of his plumbing work.
               </p>
               <p class="f5 poppins lh-copy">
-                With over 15 years in the plumbing industry, Ron has handled everything from minor leaks to spearheading projects at notable venues like DB Breweries and Alliance Meats. He's been involved in school renovations and retirement village constructions. Having worked across regions from Christchurch to South Canterbury, he's now settled in Nelson for the past five years. Although knowledgeable in drainlaying and gas work, he's not currently licensed to perform these specific tasks.
+                With over 15 years in the plumbing industry, Ron has handled everything from minor leaks to spearheading projects at notable venues like DB Breweries and Alliance Meats. He's been involved in school renovations and retirement village constructions. Having worked across regions from Christchurch to South Canterbury, he's now settled in Nelson for the past five years.
               </p>
 
               <p class="f5 poppins lh-copy">
@@ -150,6 +172,13 @@
         <h3 class="f2 saira mv3">Call Ron on 027 376 9994</h3>
         <h5 class="f6 poppins mv1">We're happy to chat and provide a no-obligation quote.</h5>
       </div>
+
+			<div id="leave-banner" class="fixed flex items-center" style="left:0;right:0;bottom:0;">
+				<div class="w-100 w-60-ns center pv3 ph4 br3 br--top bg-gold">
+					<p class="saira b f3 mb0">Unavailable until 9th July 2024</p>
+					<p class="saira f5">Due to extended leave for family events we’re unavailable until the 9th July 2024. If your job can wait until then, please send us an <a class="near-black fw6 link saira underline" href="mailto:info@plumbstuffnz.co.nz">email</a> and we will schedule you in. All emails will be answered within 48 hours.</p>
+				</div>
+			</div>
     </main>
 
     <footer id="footer" class="footer white pv4" style="background:#333333">
