@@ -13,15 +13,25 @@
 .bg-pear { background: #D1DB2F; }
 .bg-light { background: #f9f9f9; }
 
+.gap0 { gap: 0; }
+.gap1 { gap: 0.25rem; }
+.gap2 { gap: 0.5rem; }
+.gap3 { gap: 1rem; }
+.gap4 { gap: 2rem; }
+.gap5 { gap: 4rem; }
+
 body, html {
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
 }
 
 .banner {
-	position: fixed;
+	position: sticky;
 	top: 0px;
+	z-index: 1000;
 }
 
 .hero {
@@ -73,3 +83,4 @@ body, html {
 	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 	transform: translateY(0);
 }
+
